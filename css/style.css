@@ -1,0 +1,398 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*top bar start */
+.top_bar {
+    background-image: linear-gradient(to top, #3466A5, #00C4D4);
+    display: flex;
+    flex-wrap: wrap;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 4px 0;
+}
+
+.logo__container .logo {
+    max-width: 80px;
+    border-radius: 40%;
+}
+
+.nav__link {
+    line-height: 3;
+}
+
+.topbar__items li {
+    display: inline;
+}
+
+.topbar_header strong {
+    color: azure;
+}
+
+
+/*top bar end */
+
+/* nav bar start */
+.nav-bar-container {
+    background-color: #634490;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+    position: sticky;
+    top: 0;
+    margin-inline: 4px;
+}
+
+.nav__name {
+    color: goldenrod;
+    font-size: xx-large;
+}
+
+.check {
+    display: none;
+}
+
+.check__img {
+    max-width: 20px;
+    display: none;
+}
+
+.nav__link ul li {
+    display: inline;
+    line-height: 3;
+}
+
+
+/* nav bar end */
+
+
+/* content start*/
+.content {
+    max-width: 90vw;
+    min-height: 40vh;
+    background-color: aliceblue;
+    margin: 10px auto;
+    text-align: center;
+    padding: 2rem;
+    border: .5px solid black;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 30px 10px;
+}
+
+
+.content__img {
+    max-width: 100%;
+}
+
+/* content end*/
+
+/* card start*/
+
+.card_header_container {
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.card_header {
+    font-family: Sans-Serif;
+    font-size: 3rem;
+    color: #634490;
+    text-decoration: underline #634490;
+}
+
+.card_container {
+    max-width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    border: .3px solid #634490;
+}
+
+.cards {
+    max-width: 14rem;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: .5rem;
+    box-shadow: -5px -5px 40px 3px;
+}
+
+.card__title h3 {
+    font-family: Comic Sans MS;
+    font-size: 1rem;
+}
+
+.cards__img {
+    max-width: 100%;
+    height: 100px;
+    border: .5px solid;
+    border-radius: .5px;
+}
+
+.card__content {
+    text-decoration: bold;
+    font-family: Sans-Serif;
+    font-size: 20px;
+}
+
+
+/* card end*/
+
+/*footer start */
+.my_footer {
+    max-width: 100vw;
+    background-color: #550569;
+    margin-bottom: .5rem;
+}
+
+.footer_container,
+.footer__name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.footer__links a {
+    text-decoration: none;
+    color: white;
+}
+
+/*footer end */
+
+/* register start*/
+.form {
+    background-image: linear-gradient(to top, #c904c2, #00C4D4);
+    margin: 20px auto;
+    text-align: center;
+    padding: 2%;
+    color: white;
+    max-width: 40%;
+}
+
+.form form {
+    padding: 2rem;
+}
+
+.form form a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.btn_container {
+    margin: 15px 0;
+}
+
+
+/* register end */
+
+/* profile start */
+.profile_card_container{
+    background-image: linear-gradient(to top, #c904c2, #00C4D4);
+    max-width: 50vw;
+    margin: 20px auto;
+    color: aliceblue;
+}
+.profile_card {
+    margin: 2rem ;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.profile_card ul li{
+    margin-block: 20px auto;
+    min-width: 50%;
+    list-style: none;
+    font-size: medium;
+    /* background-color: #550569; */
+    text-align: start;
+
+}
+.profile_footer a{
+    font-size: medium;
+}
+
+/*@media for 768px start */
+@media only screen and (max-width:768px) {
+
+    .top_bar {
+        padding: 5px 10px;
+    }
+
+    .topbar__items a {
+        font-size: x-small;
+    }
+
+    .logo__container .logo {
+        max-width: 50px;
+    }
+
+    .nav__name {
+        font-size: x-large;
+    }
+
+    .nav-bar-container {
+        padding-inline: 20px;
+    }
+
+    .nav__link {
+        position: fixed;
+        display: block;
+        background: linear-gradient(to top, #00C4D4, #634490);
+        right: 0;
+        top: 6rem;
+        animation: fade-out .5s ease-in-out forwards;
+        border-top-left-radius: 4%;
+        border-bottom-left-radius: 4%;
+    }
+
+    .nav__link ul li {
+        display: block;
+        padding: 10px;
+    }
+
+    .check__img {
+        display: block;
+    }
+
+
+
+    @keyframes fade-out {
+        0% {
+            transform: translatex(0%);
+        }
+
+        100% {
+            opacity: 0%;
+            pointer-events: none;
+            transform: translatex(30%);
+        }
+    }
+
+    .check:checked~.nav__link {
+        animation: fade-in .5s ease-in-out forwards;
+
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 100%;
+            transform: translatex(30%);
+        }
+
+        100% {
+            transform: translatex(0%);
+        }
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .content h1,
+    h3 {
+        font-size: larger;
+    }
+
+    .card_header {
+        font-size: 1.5rem;
+    }
+
+    .cards p {
+        font-size: small;
+    }
+
+    .footer_container h3,
+    h4 {
+        font-size: medium;
+    }
+
+    .form {
+        min-width: 60%;
+    }
+
+    .form form {
+        font-size: small;
+    }
+
+    .btn_container button {
+        font-size: small;
+    }
+    .profile_card_container{
+        min-width: 70vw;
+    }
+    .profile_card ul li{
+        font-size: small;
+    }
+    .profile_footer a{
+        font-size: small;
+    }
+
+}
+
+/*@media for 768px start */
+
+@media only screen and (max-width:480px) {
+    .form {
+        min-width: 80%;
+    }
+
+    .form form {
+        font-size: x-small;
+    }
+
+    .footer_container,
+    .footer__name {
+        padding: .5rem;
+        gap: 0;
+    }
+
+    .btn_container button {
+        font-size: x-small;
+    }
+
+    .footer_container h3,
+    h4,
+    p,
+    a,
+    strong {
+        font-size: x-small;
+    }
+
+    .admin_header a {
+        font-size: xx-small;
+    }
+    .profile_card_container{
+        min-width: 90vw;
+    }
+    .profile_card ul li{
+        font-size: x-small;
+    }
+    .profile_footer a{
+        font-size: x-small;
+    }
+
+
+
+}

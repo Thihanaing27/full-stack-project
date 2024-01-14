@@ -1,0 +1,10 @@
+.form {
+    background-image: linear-gradient(to top,#c904c2,#00C4D4);
+    margin: 20px auto;
+    text-align: center;
+    padding: 2%;
+}
+
+.btn_container {
+    margin: 15px 0;
+}
